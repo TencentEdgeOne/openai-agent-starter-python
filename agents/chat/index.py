@@ -29,13 +29,6 @@ from .._tools import get_weather, get_clothing_advice, translate_text, text_stat
 
 load_dotenv()
 
-try:
-    import truststore
-
-    truststore.inject_into_ssl()
-except Exception:
-    pass
-
 logger = create_logger("chat")
 
 
